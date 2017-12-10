@@ -18,10 +18,22 @@ russell init --name CNN_Text_Classification
 russell run --mode jupyter
 ```
 点击新建一个terminals，运行
-```Python
+```bash
 python train.py
+```
+
+<p align="center">
+<img src="https://github.com/RussellCloud/CNN_in_Text_Classification/raw/master/img/train.png" height="300">
+</p>
+
+```bash
 python eval.py --eval_train --checkpoint_dir="/workspace/output/runs/checkpoints/"
 ```
+
+<p align="center">
+<img src="https://github.com/RussellCloud/CNN_in_Text_Classification/raw/master/img/test.png" height="300">
+</p>
+
 复现成功
 
 
