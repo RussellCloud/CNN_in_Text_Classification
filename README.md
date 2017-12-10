@@ -1,12 +1,29 @@
 **["Implementing a CNN for Text Classification in Tensorflow"代码复现](http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/)**
 
-该文是Kim文章[Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1408.5882)的tensorflow实现。
+本文是Kim文章[Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1408.5882)的tensorflow实现。
 
 ## 依赖
 
 - Python 3
 - Tensorflow >= 1.0
 - Numpy
+
+## 在RussellCloud平台上实现快速复现
+在[RussellCloud](http://russellcloud.com)上新建名为`CNN_Text_Classification`的项目，选择默认容器环境`tensorflow-1.0`
+
+```
+git clone git@github.com:RussellCloud/CNN_in_Text_Classification.git
+cd CNN_in_Text_Classification
+russell init --name CNN_Text_Classification
+russell run --mode jupyter
+```
+点击新建一个terminals，运行
+```Python
+python train.py
+python eval.py --eval_train --checkpoint_dir="/workspace/output/runs/checkpoints/"
+```
+复现成功
+
 
 ## Training
 
@@ -61,10 +78,9 @@ Train:
 
 Replace the checkpoint dir with the output from the training. To use your own data, change the `eval.py` script to load your data.
 
-# 在RussellCloud平台上实现快速复现
-
 
 ## References
 
 - [Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1408.5882)
 - [A Sensitivity Analysis of (and Practitioners' Guide to) Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1510.03820)
+- [dennybritz/cnn-text-classification-tf](https://github.com/dennybritz/cnn-text-classification-tf)
