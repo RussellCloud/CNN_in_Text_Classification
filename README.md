@@ -23,7 +23,7 @@ python train.py
 ```
 
 <p align="center">
-<img src="https://github.com/RussellCloud/CNN_in_Text_Classification/raw/master/img/train.png" height="300">
+<img src="https://github.com/RussellCloud/CNN_in_Text_Classification/raw/master/img/train.png" height="200">
 </p>
 
 ```bash
@@ -31,7 +31,7 @@ python eval.py --eval_train --checkpoint_dir="/workspace/output/runs/checkpoints
 ```
 
 <p align="center">
-<img src="https://github.com/RussellCloud/CNN_in_Text_Classification/raw/master/img/test.png" height="300">
+<img src="https://github.com/RussellCloud/CNN_in_Text_Classification/raw/master/img/test.png" height="200">
 </p>
 
 复现成功
